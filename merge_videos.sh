@@ -23,6 +23,7 @@ sudo apt install ffmpeg;
 varname=${PWD##*/}.mp4;
 varname="${varname// /_}"
 ffmpeg -f concat -safe 0 -i list2.txt -c copy ${varname};
+rm order.txt 
 #rm list.txt list2.txt
 #echo "hello yash"
 
